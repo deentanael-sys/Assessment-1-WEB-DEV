@@ -10,15 +10,15 @@ For each exercise you should create a new folder with the name of the exercise a
 
 Create a web page containing information on your favourite recipe. The page should include
 
-* Appropriate tags to structure text (e.g. h and p tags).
-* A h1 tag for the recipe name
-* A p tag for a description of the recipe
-* A h2 tag for the ingredients
-* An unorder list for the ingredients
-* An h2 tag for the method
-* An order list for the steps involved in the recipe 'method'
-* Make sure the code is indented and spaced properly.
-* Add comments explaining what each element does.
+* Appropriate tags to structure text (e.g. h and p tags). x
+* A h1 tag for the recipe name x
+* A p tag for a description of the recipe x
+* A h2 tag for the ingredients x
+* An unorder list for the ingredients x
+* An h2 tag for the method x
+* An order list for the steps involved in the recipe 'method' x
+* Make sure the code is indented and spaced properly. x
+* Add comments explaining what each element does. x
 
 <hr>
 
