@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Petrol Calculator</title>
+</head>
+<body>
+
+<!-- center tag to center evrything inside -->
+<center>
+<!-- div with main container class for styling in css -->
+<div class="main-container">
+        <h2>Petrol Price Checker</h2>
+    <!-- another div with a class for css purposes -->
+    <div class="calculator-container">
+        <!-- the form element here users can input values -->
+        <form>
+            <!-- this is the input field for liters -->
+            
+            <p>Cost per liter: $1.72</p>
+            <input type="number" id="p" placeholder="Input Liters Here">
+            <br>
+            <!-- button with a click event -->
+            <button type="button" onclick="calculate()">Calculate</button>
+            <p>Total price: $<output id="output"></output></p>
+        </form>
+
+        <!-- heres the script fot the onclick calculate function in the button element -->
+        <script>
+            function calculate() {
+                // takes values from input field
+                const liters = document.getElementById('p').value;
+                // multiplies inputted liters with the default price *1.72*
+                const total = liters * 1.72;
+                // displays the result in the output field
+                document.getElementById('output').value = total.toFixed(2);
+            }
+        </script>
+    </div>
+</div>
+</center>
+</body>
+</html>
