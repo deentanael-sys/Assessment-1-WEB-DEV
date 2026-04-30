@@ -1,0 +1,89 @@
+body {
+    background-color: #616161;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.game-container {
+    text-align: center;
+    background: #797979;
+    padding: 40px;
+    border-radius: 500px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+    width: 600px;
+    color: #ffffff;
+}
+
+#rgb-target {
+    align-items: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 20px auto;
+    width: fit-content;
+    padding: 10px;
+    background: #1d1d1d;
+    border-radius: 8px;
+    letter-spacing: 2px;
+    color: rgb(246, 246, 246);
+}
+
+.score-lives {
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+
+.score-lives p{
+    border: black solid 2px;
+    border-radius: 12px;
+    padding: 5px 15px;
+    background-color: #616161;
+}
+
+#options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.color-option {
+    width: 100px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 4px solid #191919;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.color-option:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+}
+
+#pick {
+    height: 20px;
+    font-style: italic;
+    color: #4d4d4d;
+}
+
+#reset-btn {
+    padding: 10px 25px;
+    font-size: 1rem;
+    background: #2ecc71;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#reset-btn:hover { background: #27ae60; }
