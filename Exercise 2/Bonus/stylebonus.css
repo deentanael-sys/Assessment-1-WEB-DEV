@@ -15,7 +15,7 @@ nav {
     width: 100%;
     margin: 0px;
     margin-top: -70px;
-    position:fixed;
+    position: fixed;
     color: #74008e;
 }
 
@@ -39,6 +39,16 @@ main {
     padding: 20px;
     padding-top: 10px;
     margin-top: 70px;
+    height: 100vh;
+    background: #650873;
+    background: linear-gradient(0deg,rgba(101, 8, 115, 1) 7%, rgba(165, 34, 195, 1) 33%, rgba(240, 140, 0, 1) 68%, rgba(253, 187, 45, 1) 100%);
+}
+
+main#overview-page {
+    padding: 20px;
+    padding-top: 10px;
+    margin-top: 70px;
+    height: fit-content;
     background: #650873;
     background: linear-gradient(0deg,rgba(101, 8, 115, 1) 7%, rgba(165, 34, 195, 1) 33%, rgba(240, 140, 0, 1) 68%, rgba(253, 187, 45, 1) 100%);
 }
