@@ -78,7 +78,7 @@ body {
 #reset-btn {
     padding: 10px 25px;
     font-size: 1rem;
-    background: #2ecc71;
+    background: #2e75cc;
     border: none;
     color: white;
     border-radius: 5px;
@@ -86,4 +86,6 @@ body {
     font-weight: bold;
 }
 
-#reset-btn:hover { background: #27ae60; }
+#reset-btn:hover { 
+    background: #205390;
+}
