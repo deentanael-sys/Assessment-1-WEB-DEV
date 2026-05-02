@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Video Page</title>
+
   <style>
     body {
       margin: 0;
@@ -11,29 +12,31 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background: #fff;
+      background-image: url('background_image.jpg');
+      background-size: cover;
+      background-position: center;
     }
 
     video {
       width: 80%;
       max-width: 900px;
-      border: 2px solid #000;
+      border: 5px solid #000;
+      border-radius: 14px;
     }
   </style>
+
 </head>
 <body>
-  <!--
-    Replace src with your video path, e.g. src="video/nature.mp4"
-    Replace poster with your image path, e.g. poster="images/poster.jpg"
-  -->
+
   <video
-    src="video/nature.mp4"
-    poster="images/poster.jpg"
+    src="Haikyuu.mp4"
+    poster="Haikyuu.png"
     autoplay
     loop
-    muted
     playsinline
+    muted
     controls
-  ></video>
+    >Enjoy Watching Haikyuu!</video>
+
 </body>
 </html>
