@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Soundboard</title>
+
+</head>
+
+<body>
+
+<header>
+    <h1>The Alan Partridge Text-To-Speech and Soundboard</h1>
+</header>
+
+    <main class="container">
+
+    <div class="TTS">
+        <h1>Input your text to be read out loud</h1><br>
+        <textarea id="ttsInput"></textarea>
+        <button id="speakBtn">Read Aloud</button>
+    </div>
+
+    <!-- The difference with this soundbourd and the original is that we need to change the page,-->
+    <!-- but we cant do that with simple html stuff, so we need to remake the entire div -->
+    <!-- all of the work is being done in the background through Javascript -->
+
+    <div style="flex: 2; display: flex; flex-direction: column; gap: 12px;">
+        <div class="soundboard" id="grid"></div>
+        <div class="pagination">
+            <button id="prevBtn">&#8592;</button>
+            <span id="pageIndicator">1 / 1</span>
+            <button id="nextBtn">&#8594;</button>
+        </div>
+    </div>
+
+
+            
+
+
+
+        </main>
+    <script src="script.js"></script>
+</body>
+</html>

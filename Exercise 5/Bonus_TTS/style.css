@@ -1,0 +1,117 @@
+body {
+    background-image: url('alan.png');
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #f5deb3;
+    text-align: center;
+    padding: 16px;
+    margin: 20px auto;
+    border-radius: 20px;
+    width: fit-content;
+    align-items: center;
+}
+
+header h1 {
+    color: #ff3f5f;
+    font-size: 24px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 500;
+}
+
+.container{
+    display: flex;
+    gap: 16px;
+    padding: 16px;
+    border: #000000 3px solid;
+    border-radius: 15px;
+    background-color: #f5deb368;
+}
+
+.TTS {
+    flex: 1;
+    border: #000000 3px solid;
+    border-radius: 15px;
+    background-color: #f5deb368;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+
+.TTS textarea {
+    height: 400px;
+    width: 80%;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding: 20px;
+    border: #000000 solid 5px;
+}
+.TTS button {
+    background: rgba(255, 255, 255, 0.5);
+    border: 3px solid black;
+    border-radius: 16px;
+    padding: 40px 16px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+    width: 100%;
+    height: 100%;
+    transition: background 0.15s, color 0.15s;
+}
+
+.soundboard {
+    flex: 2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+    gap: 16px;
+    padding: 16px;
+    margin: auto;
+    border: #000000 3px solid;
+    border-radius: 15px;
+    background-color: #f5deb368;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    color: rgb(0, 0, 0);
+}
+
+.pagination button {
+    width: auto;
+    height: auto;
+    padding: 10px 24px;
+    font-size: 1.2rem;
+}
+
+button {
+    background: rgba(255, 255, 255, 0.5);
+    border: 3px solid black;
+    border-radius: 16px;
+    padding: 40px 16px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+    width: 100%;
+    height: 200px;
+    transition: background 0.15s, color 0.15s, transform 0.15s;
+}
+
+button:hover{
+    background: rgba(255, 255, 255, 0.85);
+    border-color: #333;
+    transform: scale(1.03); 
+}
+
+button:active {
+    background: #e8294a;
+    color: white;
+}
