@@ -38,7 +38,7 @@ function render() {
         grid.appendChild(btn);
     });
 
-    // fill remaining slots so grid stays 3x3
+// fill remaining slots so grid stays 3x3
     const remaining = PER_PAGE - slice.length;
     for (let i = 0; i < remaining; i++) {
         const empty = document.createElement('div');
