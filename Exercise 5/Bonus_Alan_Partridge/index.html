@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Soundboard</title>
+</head>
+
+<body>
+    <header>
+        <h1>The Alan Partridge Soundboard</h1>
+    </header>
+    <main class="container">
+        <button>Ah-Ha
+            <audio id="sound1" src="Audio/ah-ha.mp3"></audio>
+        </button>
+
+        <button>Back of the Net
+            <audio id="sound2" src="Audio/back-of-the-net.mp3"></audio>
+        </button>
+
+        <button>Bang Out of Order
+            <audio id="sound3" src="Audio/bangoutoforder.mp3"></audio>
+        </button>
+
+        <button>Dan
+            <audio id="sound4" src="Audio/dan.mp3"></audio>
+        </button>
+
+        <button>Email of the Evening
+            <audio id="sound5" src="Audio/emailoftheevening.mp3"></audio>
+        </button>
+
+        <button>Hello, Partridge
+            <audio id="sound6" src="Audio/hellopartridge.mp3"></audio>
+        </button>
+
+        <button>I Ate a Scotch Egg
+            <audio id="sound7" src="Audio/iateascotchegg.mp3"></audio>
+        </button>
+
+        <button>I'm Confused
+            <audio id="sound8" src="Audio/imconfused.mp3"></audio>
+        </button>
+
+        <button>FAHH
+            <audio id="sound9" src="Audio/Fahh.mp3"></audio>
+        </button>
+
+
+    <!-- this script selects all audio elements and lowers the volume, because it's so loud originally -->
+    <script>
+    document.querySelectorAll('audio').forEach(audio => {
+        audio.volume = 0.03; 
+    });
+
+    // script that listens for the click event and plays the audio when clicked
+    // you can also click the button multiple times to play the audio multiple times, it will not wait for the audio to finish before playing it again
+    document.querySelectorAll('button').forEach(button => {
+        button.addEventListener('click', () => {
+            const audio = button.querySelector('audio');
+            audio.pause();
+            audio.currentTime = 0;
+            audio.play();
+        });
+    });
+    </script>
+
+    </main>
+</body>
+</html>
