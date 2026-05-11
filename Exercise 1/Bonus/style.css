@@ -1,128 +1,72 @@
-/* this styles the body/ everything you see */
 body {
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    background-image: url(images.jpg);
-    background-size: cover;
-} 
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 20px;
+}
 
-/* this is the main grid where the ingredients and steps of the recipe is displayed */
-main{
-    display: grid; 
-    grid-template-columns: 30% 70%;
-    column-gap: 20px;
-    padding: 10px;
+h1{
+    border: 1px solid black;
     border-radius: 12px;
-    width: 80%;
-    text-align: left;
+    padding: 10px;
+    background-color: rgb(221, 221, 221);
+    margin: 10px;
 }
 
-/* this styles the main heading which says "Mansaf" */
-h1.head {
-    text-align: center;
-    color: black;
-    margin: 20px;
-    border: 1px solid brown;
+p{
+    border: 1px solid black;
     border-radius: 12px;
-    width: fit-content;
     padding: 10px;
-    background-color: rgb(255, 235, 205, 0.8);
+    margin: 10px;
+    background-color: rgb(221, 221, 221);
 }
 
-/* this styles the description thats under the main heading */
-p.head {
-    text-align: center;
-    color: black;
-    margin: 20px;
-    border: 1px solid brown;
+#dark-container{
+    border: black solid 2px;
+    background-color: rgba(137, 137, 137, 0.668);
+    border-radius: 10px;
+    margin: 10px;
+    padding-top: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin: 5px;
+    align-items: center;
+    justify-content: center
+}
+
+img {
+    width: auto;
+    height: 200px;
+    border: black  solid 1px;
+    align-items: center;
+}
+
+canvas{
+    margin: 10px;
+}
+
+video{
     border-radius: 12px;
-    width: 60%;
-    padding: 10px;
-    background-color: rgb(255, 235, 205, 0.8);
-    font-size: 20px;
-    line-height: 2;
+    border: solid 5px rgb(251, 255, 0);
 }
 
-/* this styles both the grid elements "Ingredients" and "Method" */
-#ingredientstitle, #methodtitle {
-    border: 1px solid;
-    height: auto fit-content;
-    border-color: brown;
-    padding: 10px;
-    border-radius: 12px;
-    justify-self: center;
-    background-color: rgb(255, 235, 205, 0.8);
-
-/* a separation here because one is to edit the grid itself and the following edits the h2 text inside */
-
-    text-align: center;
-    color: brown;
-    margin: 20px;
-    border: 1px solid brown;
-    width: fit-content;
-    padding: 10px;
+meter{
+    width:100%;
 }
 
-/* this styles the grid for the ingredients */
-#ingredients {
-    border: 1px solid;
-    height: auto fit-content;
-    border-color: brown;
-    padding: 10px;
-    border-radius: 12px;
-    background-color: rgb(255, 235, 204, 0.8);
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
+footer{
+    background-color: rgba(201, 34, 34, 0.378);
+    margin: auto;
+    width: 100%;
+    border: black solid 2px;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
+    text-align:center ;
 }
 
-/* this styles the grid for the steps */
-#method {
-    border: 1px solid;
-    height: auto fit-content;
-    border-color: brown;
-    padding: 10px;
-    border-radius: 12px;
-    background-color: rgb(255, 235, 204, 0.8);
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-    text-align: justify;
-}
-
-/* since the list items are under an unordered list this tag edits all unordered list elements */
-ul{
-    line-height: 1.5;
-}
-
-/* this styles the ordered list items*/
-ol li{
-    margin-bottom: 30px;
-}
-
-
-/* 
-
-ALL CSS STUFF USED IN THIS FILE:
-
-For the grid 
-    background-image: set the background image of the page
-    background-size: chooses the size of the background image
-    display: sets the display type of an element (in this case grid)
-    grid-template-columns: defines the number and size of columns in a grid layout
-    column-gap: sets the gap between columns in a grid layout
-    justify-self: aligns an item inside a grid along the row axis horizontally
-
-for the content of each grid element
-    padding: adds space inside an element, between the content and the border
-    border: sets the border of an element, including width, style, and color
-    border-radius: rounds the corners of an element's border
-    width: sets the width of an element
-    margin: adds space outside an element, between the element and other elements
-    margin-bottom: sets the bottom margin of an element
-
-for the texts
-    line-height: sets the spacing between lines of text
-    color: sets the color of text
-    text-align: sets the alignment of TEXT within an element
-    font-size: sets the size of the font
-    font-family: sets the font of the text
-
-*/
