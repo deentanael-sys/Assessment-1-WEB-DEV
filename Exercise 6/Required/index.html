@@ -18,8 +18,8 @@
         <!-- the form element here users can input values -->
         <form>
             <!-- this is the input field for liters -->
-            
-            <p>Cost per liter: $1.72</p>
+            <p>Price & Liters</p>
+            <input type="number" id="price" placeholder="Input price Here" value="1.72">
             <input type="number" id="p" placeholder="Input Liters Here">
             <br>
             <!-- button with a click event -->
@@ -33,7 +33,7 @@
                 // takes values from input field
                 const liters = document.getElementById('p').value;
                 // multiplies inputted liters with the default price *1.72*
-                const total = liters * 1.72;
+                const total = liters * document.getElementById('price').value;
                 // displays the result in the output field
                 document.getElementById('output').value = total.toFixed(2);
             }

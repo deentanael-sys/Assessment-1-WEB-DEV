@@ -41,6 +41,17 @@ input#p {
     text-align: center;
 }
 
+#price {
+    background-color: #faebd7dc;
+    border: 2px solid black;
+    border-radius: 12px;
+    padding: 20px;
+    width: 200px;
+    margin: 10px auto;
+    font-size: 25px;
+    text-align: center;
+}
+
 form p{
     font-family: Impact, Haettenschweiler, 'Arial Bold', sans-serif;
     -webkit-text-stroke: 1.5px black;
